@@ -41,8 +41,8 @@ print(shows["genre"]["kids"]["yu_gi_oh"]["cast"][0]["actor"])
 print(shows["genre"]["comedy"]["the_office"]["num_seasons"])
 
 # QUESTION 12: Who are the main characters of the Office (comedy) (not the actors, but the actual character names)?
-for characters in shows["genre"]["comedy"]["the_office"]["cast"][0:4, (1)]:
-    print(characters)
+for char in shows["genre"]["comedy"]["the_office"]["cast"]:
+    print(char["character"])
 
 # QUESTION 13: List the characters in Teen Titans (kids)
 
